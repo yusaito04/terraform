@@ -5,7 +5,7 @@ resource "azurerm_virtual_machine_extension" "TW" {
   virtual_machine_name = "${var.vm_name_001}"
   publisher            = "Datadog.Agent"
   type                 = "DatadogLinuxAgent"
-  type_handler_version = "0.4"
+  type_handler_version = "0.6.2"
 
   settings = <<SETTINGS
   {
